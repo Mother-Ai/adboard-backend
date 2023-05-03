@@ -35,7 +35,7 @@ app.use('/users', userRoute);
 app.use('/power', powerRoute);
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Welcome to Mybudy!')
 })
 
 //connect to mongodb
