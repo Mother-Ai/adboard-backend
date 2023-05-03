@@ -16,6 +16,9 @@ import {getAllProducts} from "../controllers/User/GetAllProducts.js";
 import {updateUser} from "../controllers/User/UpdateUser.js";
 import {getUserById} from "../controllers/User/GetUserById.js";
 import {createOrder} from "../controllers/User/CreateOrders.js";
+import {paywithwallet} from "../controllers/User/Paywithwallet.js"
+
+
 
 
 
@@ -69,6 +72,11 @@ router.get("/getAllProducts", getAllProducts);
 
 //create order
 router.post("/createOrder",createOrder);
+
+//paywithWallet 
+// router.post("/payWithWallet",payWithWallet);
+
+router.post("/paywithwallet", paywithwallet)
 
 
 
