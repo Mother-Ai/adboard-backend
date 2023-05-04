@@ -12,7 +12,7 @@ const ProductSchema = new Schema({
    discount: { type: String},
    createdAt: { type: String},
    updatedAt: { type: String},
-   quantity: { type: String, default: 1 },
+   quantity: { type: String},
 
 
 
