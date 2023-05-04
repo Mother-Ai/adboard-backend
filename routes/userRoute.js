@@ -17,6 +17,8 @@ import {updateUser} from "../controllers/User/UpdateUser.js";
 import {getUserById} from "../controllers/User/GetUserById.js";
 import {createOrder} from "../controllers/User/CreateOrders.js";
 import {paywithwallet} from "../controllers/User/Paywithwallet.js"
+import { createAd } from "../controllers/User/CreateAd.js";
+import { getAllAds } from "../controllers/User/GetAllAds.js";
 
 
 
@@ -77,6 +79,12 @@ router.post("/createOrder",createOrder);
 // router.post("/payWithWallet",payWithWallet);
 
 router.post("/paywithwallet", paywithwallet)
+
+// create Ad 
+router.post("/createad", createAd)
+
+//get all adds 
+router.get("/getallads", getAllAds)
 
 
 

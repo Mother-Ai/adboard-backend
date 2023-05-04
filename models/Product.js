@@ -11,7 +11,7 @@ const ProductSchema = new Schema({
    productThumbnailUrl: { type: String},
    discount: { type: String},
    createdAt: { type: String},
-    updatedAt: { type: String},
+   updatedAt: { type: String},
    quantity: { type: String, default: 1 },
 
 

@@ -13,7 +13,7 @@ import User from "../../models/User.js";
 //  update user balance with new amount
 export const paywithwallet = async (req, res) => {
     console.log("this is req.body", req.body);
-    const { apiKey, amount } = req.body;
+    const { apiKey, amount, description } = req.body;
     try {
         const Key = await User.findOne({ apiKey });
     if (!Key || Key.apiKey !== apiKey || Key.apiKey === undefined) {
@@ -23,7 +23,7 @@ export const paywithwallet = async (req, res) => {
      if (Key) {
         const newBalance =  parseInt(Key.balance) - parseInt(amount);
         await User.updateOne({ apiKey }, { balance: newBalance });
-        res.status(200).send({ msg: "Balance updated successfully" , data: newBalance});
+        res.status(200).send({ msg: "Balance updated successfully" , data:{balance: newBalance, description: description, amount: amount}});
         }
 
         
