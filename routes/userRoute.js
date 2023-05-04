@@ -21,6 +21,8 @@ import { createAd } from "../controllers/User/CreateAd.js";
 import { getAllAds } from "../controllers/User/GetAllAds.js";
 import { createCategory } from '../controllers/Products/CreateCategory.js';
 import { getAllCategory } from "../controllers/Products/GetAllCategory.js";
+import { createSubCategory } from "../controllers/Products/CreateSubCategory.js";
+import { getAllSubCategory } from "../controllers/Products/GetAllSubCategory.js";
 
 
 
@@ -95,6 +97,12 @@ router.get("/getallads", getAllAds)
 router.post("/createCategory", createCategory)
 // get alll Catergory
 router.get("/getAllCategory", getAllCategory)
+
+
+router.post("/createSubCategory", createSubCategory)
+// get alll Catergory
+router.get("/getAllSubCategory", getAllSubCategory)
+
 
 
 
