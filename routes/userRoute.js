@@ -19,6 +19,10 @@ import {createOrder} from "../controllers/User/CreateOrders.js";
 import {paywithwallet} from "../controllers/User/Paywithwallet.js"
 import { createAd } from "../controllers/User/CreateAd.js";
 import { getAllAds } from "../controllers/User/GetAllAds.js";
+import { createCategory } from '../controllers/Products/CreateCategory.js';
+import { getAllCategory } from "../controllers/Products/GetAllCategory.js";
+
+
 
 
 
@@ -85,6 +89,14 @@ router.post("/createad", createAd)
 
 //get all adds 
 router.get("/getallads", getAllAds)
+
+// Category 
+
+router.post("/createCategory", createCategory)
+// get alll Catergory
+router.get("/getAllCategory", getAllCategory)
+
+
 
 
 
