@@ -16,7 +16,6 @@ await Product.deleteOne({_id: new mongoose.Types.ObjectId(req.body._id)
         })
     }
     })
-    
     }catch(err){
         res.status(500).send(err);
     }

@@ -24,6 +24,8 @@ import { getAllCategory } from "../controllers/Products/GetAllCategory.js";
 import { createSubCategory } from "../controllers/Products/CreateSubCategory.js";
 import { getAllSubCategory } from "../controllers/Products/GetAllSubCategory.js";
 import { deleteProduct } from "../controllers/Products/DeleteProduct.js";
+import { deleteCategory } from "../controllers/Products/DeleteCategory.js";
+import { deleteSubCategory } from "../controllers/Products/DeleteSubCategory.js";
 
 
 
@@ -103,11 +105,18 @@ router.get("/getallads", getAllAds)
 router.post("/createCategory", createCategory)
 // get alll Catergory
 router.get("/getAllCategory", getAllCategory)
+// delete category
+router.post("/deleteCategory", deleteCategory)
+
+
+
 
 
 router.post("/createSubCategory", createSubCategory)
 // get alll Catergory
 router.get("/getAllSubCategory", getAllSubCategory)
+// delete sub category 
+router.post("/deleteSubCategory", deleteSubCategory)
 
 
 
