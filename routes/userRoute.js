@@ -23,6 +23,7 @@ import { createCategory } from '../controllers/Products/CreateCategory.js';
 import { getAllCategory } from "../controllers/Products/GetAllCategory.js";
 import { createSubCategory } from "../controllers/Products/CreateSubCategory.js";
 import { getAllSubCategory } from "../controllers/Products/GetAllSubCategory.js";
+import { deleteProduct } from "../controllers/Products/DeleteProduct.js";
 
 
 
@@ -76,6 +77,11 @@ router.post("/addProduct", addProduct);
 
 //get all products
 router.get("/getAllProducts", getAllProducts);
+
+// delete product 
+router.post("/deleteProduct", deleteProduct);
+
+
 
 
 //create order
