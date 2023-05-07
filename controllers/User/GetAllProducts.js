@@ -7,8 +7,7 @@ export const getAllProducts = async (req, res) => {
   console.log("get all products");
     try {
         const products = await Product.find();
-        console.log(products)
-        res.status(200).send({msg:"all products", data: products});
+        res.status(200).send(products);
     }
     catch (error) {
         res.status(404).send
